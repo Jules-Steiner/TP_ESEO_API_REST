@@ -1,25 +1,19 @@
 package com.dto;
 
-public class Ville {
+public class Ville {	
 	
 	private String codeCommune;
 	private String nomCommune;
-	private String ligne;
 	private String codePostal;
+	private String libelleAcheminement;	
+	private String ligne;
+	private Coordonnee coordonnee;
 	
-		
-	
-	public String getLigne() {
-		return ligne;
+	public String getCodeCommune() {
+		return codeCommune;
 	}
-	public void setLigne(String ligne) {
-		this.ligne = ligne;
-	}
-	public String getCodePostal() {
-		return codePostal;
-	}
-	public void setCodePostal(String codePostal) {
-		this.codePostal = codePostal;
+	public void setCodeCommune(String codeCommune) {
+		this.codeCommune = codeCommune;
 	}
 	public String getNomCommune() {
 		return nomCommune;
@@ -27,11 +21,30 @@ public class Ville {
 	public void setNomCommune(String nomCommune) {
 		this.nomCommune = nomCommune;
 	}
-	public String getCodeCommune() {
-		return codeCommune;
+	public String getCodePostal() {
+		return codePostal;
 	}
-	public void setCodeCommune(String codeCommune) {
-		this.codeCommune = codeCommune;
+	public void setCodePostal(String codePostal) {
+		this.codePostal = codePostal;
 	}
+	public String getLibelleAcheminement() {
+		return libelleAcheminement;
+	}
+	public void setLibelleAcheminement(String libelleAcheminement) {
+		this.libelleAcheminement = libelleAcheminement;
+	}
+	public String getLigne() {
+		return ligne;
+	}
+	public void setLigne(String ligne) {
+		this.ligne = ligne;
+	}
+	public Coordonnee getCoordonnee() {
+		return coordonnee;
+	}
+	public void setCoordonnee(Coordonnee coordonnee) {
+		this.coordonnee = coordonnee;
+	}
+		
 
 }
